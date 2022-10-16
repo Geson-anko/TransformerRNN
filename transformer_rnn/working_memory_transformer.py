@@ -131,7 +131,7 @@ class WorkingMemoryTransformer(nn.Module):
         Shape:
             - src: :math: `(S, N, E)`
             - working_memory: :math: `(W, N, E)`
-            - src_mask: :math: `(S, S)`
+            - src_mask: :math: `(W, S)`
             - working_memory_mask: :math: `(W, W)`
             - src_key_padding_mask: :math: `(N, S)`
             - working_memory_key_padding_mask: :math: `(N, W)`
