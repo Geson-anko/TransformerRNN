@@ -55,7 +55,7 @@ class TransformerRNN(nn.Module):
         Shape:
             - src: :math: `(T, S, N, E)`. If batch_first, :math: `(N, T, S, E)`.
             - intial_working_memory: :math:`(W, N, E)`. If batch_first, :math: `(N, W, E)`
-            - src_masks: :math: `(S, S)` or `(T, S, S)`
+            - src_masks: :math: `(W, S)` or `(T, W, S)`
             - working_memory_mask: :math: `(W, W)` or `(T, W, W)`.
             - src_key_padding_masks: :math:  `(N, S)` or `(T, N, S)`
             - working_memory_key_padding_masks: :math: `(N, W)` or `(T, N, W)`
